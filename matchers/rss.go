@@ -12,6 +12,7 @@ import (
 )
 
 const RssMatcherTypeName = "rss"
+
 var searchFields = [2]string{"Title", "Description"}
 
 type RSSMatcher struct{}
