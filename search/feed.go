@@ -4,9 +4,12 @@ import (
 	"os"
 	"encoding/json"
 	"path/filepath"
+	"runtime"
+	"path"
+	"log"
 )
 
-const dataFile = "../data/feeds.json"
+const dataFile = "data/feeds.json"
 
 type Feed struct {
 	Name string `json:"site"`
@@ -15,7 +18,11 @@ type Feed struct {
 }
 
 func GetFeeds() ([]*Feed, error) {
-	absolutePath, err := filepath.Abs(dataFile)
+	_, filename, _, ok := runtime.Caller(0)
+	if !ok {
+		panic("No caller information")
+	}
+	absolutePath, err := filepath.Abs(path.Dir(filename) + "/../" + dataFile)
 	if err != nil {
 		return nil, err
 	}
