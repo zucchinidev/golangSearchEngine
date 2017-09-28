@@ -1,14 +1,14 @@
 package matchers
 
 import (
+	"encoding/xml"
+	"errors"
+	"fmt"
 	"github.com/zucchinidev/golangSearchEngine/search"
 	"log"
-	"errors"
-	"encoding/xml"
 	"net/http"
-	"fmt"
-	"regexp"
 	"reflect"
+	"regexp"
 )
 
 const RssMatcherTypeName = "rss"

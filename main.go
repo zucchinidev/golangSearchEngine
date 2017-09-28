@@ -1,10 +1,10 @@
 package main
 
 import (
-	"log"
-	"os"
 	_ "github.com/zucchinidev/golangSearchEngine/matchers"
 	"github.com/zucchinidev/golangSearchEngine/search"
+	"log"
+	"os"
 )
 
 func init() {

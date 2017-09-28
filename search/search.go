@@ -37,8 +37,7 @@ func Run(searchTerm string) {
 	DisplayResults(resultChannel)
 }
 
-
-func Register(matcherType string, matcher Matcher)  {
+func Register(matcherType string, matcher Matcher) {
 	if _, exists := availableMatchers[matcherType]; exists {
 		log.Fatalf(matcherType, "Matcher already registered")
 	}

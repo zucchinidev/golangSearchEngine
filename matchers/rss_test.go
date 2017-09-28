@@ -1,8 +1,8 @@
 package matchers
 
 import (
-	"testing"
 	"github.com/zucchinidev/golangSearchEngine/search"
+	"testing"
 )
 
 func TestRSSMatcher_Search(t *testing.T) {

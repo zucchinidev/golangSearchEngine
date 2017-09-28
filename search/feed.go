@@ -1,12 +1,11 @@
 package search
 
 import (
-	"os"
 	"encoding/json"
+	"os"
+	"path"
 	"path/filepath"
 	"runtime"
-	"path"
-	"log"
 )
 
 const dataFile = "data/feeds.json"

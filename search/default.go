@@ -1,6 +1,6 @@
 package search
 
-type defaultMatcher struct {}
+type defaultMatcher struct{}
 
 const DefaultMatcherTypeName = "default"
 
